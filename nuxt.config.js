@@ -1,6 +1,16 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const pkg = require('./package')
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/my-portfolio/'
+  }
+} : {}
+
+module.exports = {
+  ...routerBase
+}
+
 module.exports = {
   mode: 'spa',
 
