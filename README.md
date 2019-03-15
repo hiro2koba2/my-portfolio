@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/roffet/my-portfolio.svg?branch=master)](https://travis-ci.org/roffet/my-portfolio)
+
 # my-portfolio
 
 > My Nuxt.js project
