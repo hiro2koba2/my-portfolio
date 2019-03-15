@@ -8,6 +8,10 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
+  ...routerBase
+}
+
+module.exports = {
   mode: 'spa',
 
   /*
@@ -29,8 +33,6 @@ module.exports = {
       }
     ]
   },
-
-  routerBase,
 
   /*
   ** Customize the progress-bar color
@@ -91,5 +93,8 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    base: '/my-portfolio/'
   }
 }
