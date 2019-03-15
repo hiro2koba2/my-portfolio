@@ -93,5 +93,8 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    base: '/my-portfolio/'
   }
 }
