@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -42,42 +42,20 @@
       >
         <v-icon>web</v-icon>
       </v-btn>
-      <v-btn
+      <!-- <v-btn
         icon
         @click.stop="fixed = !fixed"
       >
-        <v-icon>remove</v-icon>
-      </v-btn>
+        <v-icon>email</v-icon>
+      </v-btn> -->
       <v-toolbar-title v-text="title" />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn>
     </v-toolbar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>
-              compare_arrows
-            </v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
+
     <v-footer
       :fixed="fixed"
       app
@@ -97,19 +75,24 @@ export default {
       items: [
         {
           icon: 'apps',
-          title: 'Welcome',
+          title: 'Top',
           to: '/'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'person',
+          title: 'About',
+          to: '/about'
+        },
+        {
+          icon: 'history',
+          title: 'History',
+          to: '/history'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'My Portfolio'
     }
   }
 }
