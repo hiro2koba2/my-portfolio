@@ -2,13 +2,11 @@
 
 	<div class="dashborad">
 
-		<h1 class="subheading grey--text">My portfolio</h1>
-
-		<v-container class="my-5">
+		<v-container class="my-2">
 
 			<v-layout row wrap>
 
-				<v-flex xs12 sm6 md6>
+				<v-flex sm12 md6>
 					<v-card class="ma-3">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
@@ -25,7 +23,7 @@
 					</v-card>
 				</v-flex>
 
-				<v-flex xs12 sm6>
+				<v-flex sm12 md6>
 					<v-card class="ma-3">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
@@ -42,7 +40,7 @@
 					</v-card>
 				</v-flex>
 
-				<v-flex xs12 sm6>
+				<v-flex sm12 md6>
 					<v-card class="ma-3">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
@@ -59,7 +57,7 @@
 					</v-card>
 				</v-flex>
 
-				<v-flex xs12 sm6>
+				<v-flex sm12 md6>
 					<v-card class="ma-3">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
