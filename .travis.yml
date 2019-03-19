@@ -16,7 +16,6 @@ install:
 
 script:
   - echo "Skipping tests"
-  - yarn run lint
 
 deploy:
   provider: pages
