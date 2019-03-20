@@ -7,7 +7,7 @@
 			<v-layout row wrap>
 
 				<v-flex sm12 md6>
-					<v-card class="ma-3">
+					<v-card class="ma-4">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
         		<v-card-title primary-title>
@@ -24,7 +24,7 @@
 				</v-flex>
 
 				<v-flex sm12 md6>
-					<v-card class="ma-3">
+					<v-card class="ma-4">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
         		<v-card-title primary-title>
@@ -41,7 +41,7 @@
 				</v-flex>
 
 				<v-flex sm12 md6>
-					<v-card class="ma-3">
+					<v-card class="ma-4">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
         		<v-card-title primary-title>
@@ -58,7 +58,7 @@
 				</v-flex>
 
 				<v-flex sm12 md6>
-					<v-card class="ma-3">
+					<v-card class="ma-4">
 						<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
         		<v-card-title primary-title>
@@ -75,7 +75,7 @@
 				</v-flex>
 			</v-layout>
 
-			<v-btn fab dark bottom fixed right ref="button" color="primary" class="hidden-sm-and-up">
+			<v-btn fab dark bottom fixed right ref="button" color="primary" class="hidden-sm-and-up" @click="$vuetify.goTo('#top', scrollOpt)">
 				<v-icon>keyboard_arrow_up</v-icon>
 			</v-btn>
 
@@ -85,6 +85,15 @@
 
 <script>
 export default {
-	components: {}
-};
+	data() {
+		return {
+			scrollOpt: {
+        duration: 1500,
+        offset: 10,
+        easing: "easeInOutCubic"
+      }
+			// drawer: true
+		}
+	}
+}
 </script>
