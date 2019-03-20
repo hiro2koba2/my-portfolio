@@ -6,9 +6,9 @@
 					Portfolio
 				</v-toolbar-title>
 				<v-toolbar-items class="hidden-sm-and-down">
-					<v-btn flat class="ml-4"><i class="fas fa-code fa-2x mr-2"></i>Works</v-btn>
-					<v-btn flat class="ml-4"><i class="fas fa-user fa-2x mr-2"></i>About</v-btn>
-					<v-btn flat class="ml-4"><i class="fas fa-envelope fa-2x mr-2"></i>Contact</v-btn>
+					<router-link to="/" class="ma-3 decoration"><v-btn flat><i class="fas fa-code fa-2x mr-2"></i>Works</v-btn></router-link>
+					<router-link to="about" class="ma-3 decoration"><v-btn flat><i class="fas fa-user fa-2x mr-2"></i>About</v-btn></router-link>
+					<router-link to="history" class="ma-3 decoration"><v-btn flat><i class="fas fa-envelope fa-2x mr-2"></i>Contact</v-btn></router-link>
 				</v-toolbar-items>
 				<v-spacer></v-spacer>
 				<v-toolbar-side-icon class="hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer"></v-toolbar-side-icon>
@@ -22,32 +22,40 @@
 
 		<v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
-        <v-list-tile>
-					<v-list-tile-action>
-						<i class="fas fa-code fa-1x ma-2"></i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            Works
-          </v-list-tile-content>
-        </v-list-tile>
 
-				<v-list-tile>
-					<v-list-tile-action>
-						<i class="fas fa-user fa-1x ma-2"></i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            About
-          </v-list-tile-content>
-				</v-list-tile>
+				<router-link to="/">
+					<v-list-tile>
+						<v-list-tile-action>
+							<i class="fas fa-code fa-1x ma-2"></i>
+						</v-list-tile-action>
+						<v-list-tile-content>
+							Works
+						</v-list-tile-content>
+					</v-list-tile>
+				</router-link>
 
-				<v-list-tile>
-					<v-list-tile-action>
-						<i class="fas fa-envelope fa-1x ma-2"></i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            Contact
-          </v-list-tile-content>
-				</v-list-tile>
+				<router-link to="/about">
+					<v-list-tile>
+						<v-list-tile-action>
+							<i class="fas fa-user fa-1x ma-2"></i>
+						</v-list-tile-action>
+						<v-list-tile-content>
+							About
+						</v-list-tile-content>
+					</v-list-tile>
+				</router-link>
+
+				<router-link to="/history">
+					<v-list-tile>
+						<v-list-tile-action>
+							<i class="fas fa-envelope fa-1x ma-2"></i>
+						</v-list-tile-action>
+						<v-list-tile-content>
+							Contact
+						</v-list-tile-content>
+					</v-list-tile>
+				</router-link>
+
       </v-list>
     </v-navigation-drawer>
 
@@ -64,25 +72,13 @@ export default {
 			miniVariant: false,
 			right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
-			items: [
-        {
-          icon: "apps",
-          title: "Top",
-          to: "/"
-        },
-        {
-          icon: "person",
-          title: "About",
-          to: "/about"
-        },
-        {
-          icon: "history",
-          title: "History",
-          to: "/history"
-				}
-			]
 		}
 	}
 }
 </script>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
