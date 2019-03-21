@@ -5,8 +5,8 @@
 				<v-toolbar-title app class="display-1 ma-3">
 					Portfolio
 				</v-toolbar-title>
-				<v-toolbar-items class="hidden-sm-and-down" v-for="link in links" :key="link.text" router :to="link.route">
-					<v-btn flat><v-icon>{{ link.icon }}</v-icon>{{link.text}}</v-btn>
+				<v-toolbar-items class="hidden-sm-and-down" v-for="link in links" :key="link.text">
+					<v-btn flat router :to="link.route"><v-icon>{{ link.icon }}</v-icon>{{link.text}}</v-btn>
 				</v-toolbar-items>
 				<v-spacer></v-spacer>
 				<v-toolbar-side-icon class="hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer"></v-toolbar-side-icon>
@@ -49,9 +49,9 @@ export default {
 			right: true,
       rightDrawer: false,
 			links: [
-				{ icon: 'folder', text: 'Works', route: '/' },
+				{ icon: 'code', text: 'Works', route: '/' },
 				{ icon: 'person', text: 'About', route: '/about' },
-				{ icon: 'dashboard', text: 'Contact', route: '/histtory' },
+				{ icon: 'mail', text: 'Contact', route: '/history' },
 			]
 		}
 	}
