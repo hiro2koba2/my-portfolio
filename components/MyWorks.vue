@@ -1,28 +1,28 @@
 <script>
 export default [
     {
-      "title": "k",
+      "title": "dashboard",
       "body": "です。\nます。\nます。\nした。",
       "img": "x",
       "url": "x",
       "link_text": "GitHub",
     },
     {
-      "title": "s",
+      "title": "line bot",
       "body": "Fです。",
       "img": "x",
       "url": "x",
       "link_text": "Webサイト",
     },
     {
-      "title": "s",
+      "title": "sns app",
       "body": "ます。",
       "img": "x",
       "url": "x",
       "link_text": "Webサイト",
     },
     {
-      "title": "s",
+      "title": "portfolio",
       "body": "です",
       "img": "table.gif",
       "url": "x",
