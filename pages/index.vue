@@ -11,9 +11,6 @@
 							<v-card class="ma-4" slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
 								<v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
-								<v-chip disabled color="green">Vue.js</v-chip>
-								<v-chip disabled color="orange">Laravel</v-chip>
-
 								<v-card-title primary-title>
 									<div>
 										<h3 class="headline">{{ work.title }}</h3>

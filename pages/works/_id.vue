@@ -4,12 +4,11 @@
 
     <v-flex sm12>
       <v-card class="ma-4" slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
-        <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
-
-        <v-chip disabled color="green">Vue.js</v-chip>
-        <v-chip disabled color="orange">Laravel</v-chip>
+        <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="1/2"></v-img>
 
         <v-card-title primary-title>
+          <v-chip disabled color="green">Vue.js</v-chip>
+          <v-chip disabled color="orange">Laravel</v-chip>
           <div>
             <h3 class="headline">Kangaroo Valley Safari</h3>
           </div>
