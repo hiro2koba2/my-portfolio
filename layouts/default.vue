@@ -2,16 +2,18 @@
 	<v-app>
 		<nav>
 			<v-toolbar flat app>
-				<v-toolbar-title app class="display-1 ma-3">
+				<v-toolbar-title class="display-1 ma-3">
 					Portfolio
 				</v-toolbar-title>
+
+				<v-spacer></v-spacer>
 				<v-toolbar-items class="hidden-sm-and-down" v-for="link in links" :key="link.text">
 					<v-btn flat router :to="link.route"><v-icon>{{ link.icon }}</v-icon>{{link.text}}</v-btn>
 				</v-toolbar-items>
-				<v-spacer></v-spacer>
 				<v-toolbar-side-icon class="hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer"></v-toolbar-side-icon>
 			</v-toolbar>
 		</nav>
+
 		<v-content id="top">
 			<v-container>
 				<nuxt/>
@@ -35,8 +37,9 @@
       </v-list>
     </v-navigation-drawer>
 
-		<v-footer app>
-      <span>&copy; 2019</span>
+		<v-footer class="pa-4">
+			<v-spacer></v-spacer>
+			<span> &copy;2019 — roffet</span>
     </v-footer>
 	</v-app>
 </template>
@@ -51,15 +54,9 @@ export default {
 			links: [
 				{ icon: 'code', text: 'Works', route: '/' },
 				{ icon: 'person', text: 'About', route: '/about' },
-				{ icon: 'mail', text: 'Contact', route: '/history' },
+				{ icon: 'mail', text: 'Contact', route: '/contact' },
 			]
 		}
 	}
 }
 </script>
-
-<style>
-  a {
-    text-decoration: none;
-  }
-</style>

@@ -8,17 +8,26 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
+  generate: {
+    routes: [
+      '/works/1',
+      '/works/2',
+      '/works/3',
+      '/works/4',
+    ]
+  },
+
   mode: 'spa',
 
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'my-portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'my-postfolio' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
