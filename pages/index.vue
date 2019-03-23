@@ -2,7 +2,7 @@
 
 	<div class="dashborad">
 		<v-container class="my-2">
-			<h1 class="text-xs-center">My Products</h1>
+			<h1 class="text-xs-center">Works</h1>
 			<v-layout row wrap>
 
 				<v-flex sm12 md6  v-for="(work,key) in works" :key="key">
@@ -19,7 +19,9 @@
 
 								<v-card-actions>
 									<v-btn flat color="orange" href="https://www.google.com" target="_blank" rel="noopener noreferrer">URL</v-btn>
-									<v-btn flat color="orange">Github</v-btn>
+									<nuxt-link :to="{ name: 'works-id', params: { id: key }}">
+										<v-btn flat color="orange">Github</v-btn>
+									</nuxt-link>
 								</v-card-actions>
 							</v-card>
 
@@ -49,6 +51,7 @@ export default {
 			// },
 			works: Works,
 		}
-	}
+	},
+	transition: "reverse"
 }
 </script>

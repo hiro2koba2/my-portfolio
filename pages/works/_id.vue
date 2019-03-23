@@ -10,7 +10,7 @@
           <v-chip disabled color="green">Vue.js</v-chip>
           <v-chip disabled color="orange">Laravel</v-chip>
           <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
+            <h3 class="headline">{{ work.title }}</h3>
           </div>
         </v-card-title>
 
@@ -20,7 +20,9 @@
         </v-card-actions>
 
         <!-- 戻るボタン -->
-
+        <NuxtLink to="/">
+          Back home
+        </NuxtLink>
       </v-card>
     </v-flex>
   </v-container>
