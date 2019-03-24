@@ -5,6 +5,7 @@ export default [
       "body": "です。\nます。\nます。\nした。",
       "img": "x",
       "url": "x",
+      "tags": ['Vuetify', 'Nuxt.js', 'Travis CI'],
       "link_text": "GitHub",
     },
     {
@@ -12,6 +13,7 @@ export default [
       "body": "Fです。",
       "img": "x",
       "url": "x",
+      "tags": ['Vue.js', 'Laravel'],
       "link_text": "Webサイト",
     },
     {
@@ -19,6 +21,7 @@ export default [
       "body": "ます。",
       "img": "x",
       "url": "x",
+      "tags": ['Vuetify', 'Nuxt.js', 'Travis CI'],
       "link_text": "Webサイト",
     },
     {
@@ -26,6 +29,7 @@ export default [
       "body": "です",
       "img": "table.gif",
       "url": "x",
+      "tags": ['Vue.js', 'Laravel'],
       "link_text": "GitHub",
     },
   ]

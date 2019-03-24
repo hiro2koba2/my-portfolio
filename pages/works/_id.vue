@@ -10,8 +10,9 @@
             </div>
           </v-card-title>
 
-          <v-chip disabled color="green">Vue.js</v-chip>
-          <v-chip disabled color="orange">Laravel</v-chip>
+          <v-chip disabled color="blue white--text" v-for="tag in work.tags" :key="tag.id">
+            {{ tag }}
+          </v-chip>
 
           <v-card-actions>
             <v-btn flat color="orange" v-bind:href="work.url" target="_blank" rel="noopener noreferrer">URL</v-btn>
@@ -33,6 +34,7 @@ export default {
     return {
       work: Works[this.$route.params.id],
     }
-  }
+  },
+  transition: 'reverse'
 }
 </script>

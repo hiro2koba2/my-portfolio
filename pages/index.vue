@@ -51,6 +51,7 @@ export default {
 			// },
 			works: Works,
 		}
-	}
+	},
+	transition: 'test'
 }
 </script>
