@@ -1,18 +1,21 @@
 // Import Vuetify styling
 @require '~vuetify/src/stylus/app.styl'
 
-.test-enter-active, .test-leave-active, .reverse-leave-active, .reverse-enter-active {
-  transition: all 1s;
+.reverse-enter-active, .reverse-leave-active, .test-leave-active, .test-enter-active {
+  transition: 0.5s;
 }
 
-// 直感的な動き
-.reverse-enter {
+.reverse-enter, .reverse-leave-to,
+.test-enter, .test-leave-to {
   opacity: 0;
-  transform: scale(0);
 }
 
-// testに入る前の別のページからの遷移を指定する testを押すことで発火
-.test-leave-active {
-  opacity: 0;
+// reverseから出る時、testに入る時
+.reverse-leave-to, .test-enter {
+  transform: scale(2);
+}
+
+// testから出る時、reverseに入る時
+.reverse-enter, .test-leave-to {
   transform: scale(0.5);
 }
