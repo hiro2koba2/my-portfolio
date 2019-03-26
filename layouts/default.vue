@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <nav>
-      <v-toolbar flat app>
+      <v-toolbar flat app class="teal accent-4 white--text">
         <v-toolbar-title class="display-1 ma-3">
           Portfolio
         </v-toolbar-title>
 
         <v-spacer />
         <v-toolbar-items v-for="link in links" :key="link.text" class="hidden-sm-and-down">
-          <v-btn flat router :to="link.route">
+          <v-btn flat router :to="link.route" class="teal accent-4 white--text">
             <v-icon>{{ link.icon }}</v-icon>{{ link.text }}
           </v-btn>
         </v-toolbar-items>
-        <v-toolbar-side-icon class="hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer" />
+        <v-toolbar-side-icon class="teal accent-4 white--text hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer" />
       </v-toolbar>
     </nav>
 
@@ -37,10 +37,16 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-footer class="pa-4">
-      <v-spacer />
-      <span> &copy;2019 — roffet</span>
-    </v-footer>
+    <!-- <v-footer class="white--text" color="primary lighten-1">
+      <v-layout justify-center row wrap>
+        <v-btn v-for="link in links" :key="link.text" router :to="link.route" color="white">
+          {{ link.text }}
+        </v-btn>
+        <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
+          &copy;2019 — <strong>roffet</strong>
+        </v-flex>
+      </v-layout>
+    </v-footer> -->
   </v-app>
 </template>
 
