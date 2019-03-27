@@ -1,7 +1,7 @@
 <template>
   <div class="dashborad">
     <v-container class="my-2">
-      <h1 class="text-xs-center">
+      <h1 class="text-xs-center grey--text">
         Works
       </h1>
       <v-layout row wrap>

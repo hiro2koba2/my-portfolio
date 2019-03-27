@@ -1,6 +1,6 @@
 <template>
   <v-container class="my-2">
-    <h1 class="text-xs-center">
+    <h1 class="text-xs-center grey--text">
       about this App
     </h1>
     <v-card class="ma-4">

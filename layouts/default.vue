@@ -12,7 +12,7 @@
             <v-icon>{{ link.icon }}</v-icon>{{ link.text }}
           </v-btn>
         </v-toolbar-items>
-        <v-toolbar-side-icon class="teal accent-4 white--text hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer" />
+        <!-- <v-toolbar-side-icon class="teal accent-4 white--text hidden-md-and-up mr-3" @click.stop="rightDrawer = !rightDrawer" /> -->
       </v-toolbar>
     </nav>
 
@@ -22,11 +22,13 @@
       </v-container>
     </v-content>
 
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary app>
+    <v-navigation-drawer v-model="rightDrawer" :right="right" class="teal accent-4" temporary app>
       <v-list>
-        <v-list-tile v-for="link in links" :key="link.text" router :to="link.route">
+        <v-list-tile v-for="link in links" :key="link.text" class="white--text" router :to="link.route">
           <v-list-tile-action>
-            <v-icon>{{ link.icon }}</v-icon>
+            <v-icon class="white--text">
+              {{ link.icon }}
+            </v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
@@ -37,9 +39,27 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-footer class="pa-4 white--text" color="primary lighten-1">
-      <v-spacer></v-spacer>
-      &copy;2019 — <strong>roffet</strong>
+    <v-footer height="65" class="white--text" color="primary lighten-1" app>
+      <v-layout justify-center row wrap>
+        <v-flex text-xs-center xs12 hidden-md-and-up>
+          <v-btn
+            v-for="link in links"
+            :key="link"
+            router
+            :to="link.route"
+            color="white"
+            flat
+            xs4
+          >
+            <v-icon>
+              {{ link.icon }}
+            </v-icon>
+          </v-btn>
+        </v-flex>
+        <v-flex primary lighten-1 text-xs-center xs12>
+          &copy;2019 — <strong>roffet</strong>
+        </v-flex>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
