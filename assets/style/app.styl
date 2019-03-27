@@ -1,21 +1,10 @@
 // Import Vuetify styling
 @require '~vuetify/src/stylus/app.styl'
 
-.reverse-enter-active, .reverse-leave-active, .test-leave-active, .test-enter-active {
-  transition: 0.5s;
+.page-enter-active, .page-leave-active {
+  transition: all 0.5s;
 }
 
-.reverse-enter, .reverse-leave-to,
-.test-enter, .test-leave-to {
+.page-enter, .page-leave-active {
   opacity: 0;
-}
-
-// reverseから出る時、testに入る時
-.reverse-leave-to, .test-enter {
-  transform: scale(2);
-}
-
-// testから出る時、reverseに入る時
-.reverse-enter, .test-leave-to {
-  transform: scale(0.5);
 }

@@ -43,7 +43,6 @@ export default {
     return {
       works: Works,
     }
-  },
-  transition: 'test'
+  }
 }
 </script>

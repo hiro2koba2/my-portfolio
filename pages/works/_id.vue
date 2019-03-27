@@ -42,7 +42,6 @@ export default {
     return {
       work: Works[this.$route.params.id],
     }
-  },
-  transition: 'reverse'
+  }
 }
 </script>
