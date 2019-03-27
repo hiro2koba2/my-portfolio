@@ -22,11 +22,9 @@
                 <v-btn flat color="orange" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                   URL
                 </v-btn>
-                <nuxt-link :to="{ name: 'works-id', params: { id: key }}">
-                  <v-btn flat color="orange">
-                    Learn More
-                  </v-btn>
-                </nuxt-link>
+                <v-btn flat color="orange" router :to="{ name: 'works-id', params: { id: key }}">
+                  Learn More
+                </v-btn>
               </v-card-actions>
             </v-card>
           </v-hover>

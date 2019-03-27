@@ -27,10 +27,6 @@
         </v-btn>
       </v-card-actions>
 
-      <!-- 戻るボタン -->
-      <NuxtLink to="/">
-        Back home
-      </NuxtLink>
     </v-card>
   </v-container>
 </template>
