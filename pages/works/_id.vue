@@ -3,9 +3,10 @@
     <h1 class="text-xs-center grey--text">
       about this App
     </h1>
-    <v-card class="ma-4">
-      <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="1/2" />
 
+    <v-card class="ma-4">
+      <v-img :src="work.img" aspect-ratio="1.4" />
+      <!-- <img :src="work.img" alt=""> -->
       <v-card-title primary-title>
         <div>
           <h3 class="headline">
@@ -18,6 +19,10 @@
         {{ tag }}
       </v-chip>
 
+      <v-card-text>
+        {{ work.body }}
+      </v-card-text>
+
       <v-card-actions>
         <v-btn flat color="orange" :href="work.url" target="_blank" rel="noopener noreferrer">
           URL
@@ -26,7 +31,6 @@
           Github
         </v-btn>
       </v-card-actions>
-
     </v-card>
   </v-container>
 </template>
