@@ -2,27 +2,24 @@
 export default [
   {
     'title': 'dashboard',
-    'body': 'です。\nます。\nます。\nした。',
+    'body': '製作中です',
     'img': 'x',
     'url': 'https://www.google.com/',
     'tags': ['Vuetify', 'Nuxt.js', 'Travis CI'],
-    'link_text': 'GitHub',
   },
   {
     'title': 'line bot',
-    'body': 'Fです。',
+    'body': '製作中です。',
     'img': 'x',
     'url': 'https://www.google.com/',
     'tags': ['Vue.js', 'Laravel'],
-    'link_text': 'Webサイト',
   },
   {
     'title': 'sns app',
-    'body': 'ます。',
+    'body': '製作中です。',
     'img': 'x',
     'url': 'https://www.google.com/',
     'tags': ['Vuetify', 'Nuxt.js', 'Travis CI'],
-    'link_text': 'Webサイト',
   },
   {
     'title': 'portfolio',
@@ -30,7 +27,6 @@ export default [
     'img': require('assets/images/portfolio.png'),
     'url': 'https://www.google.com/',
     'tags': ['Nuxt.js', 'Vuetify', 'TravisCI'],
-    'link_text': 'GitHub',
   },
 ]
 </script>

@@ -5,8 +5,7 @@
     </h1>
 
     <v-card class="ma-4">
-      <v-img :src="work.img" aspect-ratio="1.4" />
-      <!-- <img :src="work.img" alt=""> -->
+      <v-img :src="work.img" aspect-ratio="2" />
       <v-card-title primary-title>
         <div>
           <h3 class="headline">
