@@ -5,10 +5,10 @@
         Works
       </h1>
       <v-layout row wrap>
-        <v-flex v-for="(work,key) in works" :key="key" sm12 md6>
+        <v-flex v-for="(work,key) in works" :key="key" xs12 sm12 md6>
           <v-hover>
             <v-card slot-scope="{ hover }" class="ma-4" :class="`elevation-${hover ? 12 : 2}`">
-              <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75" />
+              <v-img :src="work.img" height="200" />
               <!-- TODO:画像の設定は後々変更 -->
 
               <v-card-title primary-title>
@@ -20,9 +20,7 @@
               </v-card-title>
 
               <v-card-actions>
-                <v-btn flat color="orange" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                  URL
-                </v-btn>
+                <v-spacer />
                 <v-btn flat color="orange" router :to="{ name: 'works-id', params: { id: key }}">
                   Learn More
                 </v-btn>

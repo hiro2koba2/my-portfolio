@@ -21,11 +21,6 @@
       </v-container>
     </v-content>
 
-    <v-footer class="pa-3">
-      <v-spacer />
-      &copy;2019 — <strong>roffet</strong>
-    </v-footer>
-
     <v-bottom-nav
       app
       :value="true"
@@ -34,7 +29,7 @@
     >
       <v-btn
         v-for="link in links"
-        :key="link"
+        :key="link.text"
         :to="link.route"
         flat
       >
