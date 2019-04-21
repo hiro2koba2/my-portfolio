@@ -9,7 +9,6 @@
         v-for="(item, i) in items"
         :key="i"
         :color="item.color"
-        :icon="item.icon"
         fill-dot
       >
         <v-card
@@ -17,10 +16,12 @@
           dark
         >
           <v-card-title class="title">
-            Lorem Ipsum Dolor
+            {{ item.title }}
           </v-card-title>
           <v-card-text class="white text--primary">
-            <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+            <p>
+              {{ item.text }}
+            </p>
           </v-card-text>
         </v-card>
       </v-timeline-item>
@@ -34,27 +35,23 @@ export default {
     items: [
       {
         color: 'red lighten-2',
-        icon: 'mdi-star',
-        title: '',
-        text: '',
+        title: '2018年 8月',
+        text: 'Progateやドットインストールを始める。最初はHTML、CSS、JSをやって簡単な少し動きのあるwebサイトを作ったりした。この時はデプロイすることはしていなかった。ちなみに大学時代にも少しだけJavaを触ったことはあったが、その時はプログラミングにのめり込むことはなかった。',
       },
       {
-        color: 'purple darken-1',
-        icon: 'mdi-book-variant',
-        title: '',
-        text: '',
+        color: 'cyan lighten-1',
+        title: '2018年 11月',
+        text: 'このタイミングで2年間勤めた会社を退職して、プログラミングに専念するようになった。この頃にはPHPやRubyなどサーバーサイドの言語を中心に学習していた。開発環境でも形に残るものを作るのは楽しく、だからこそどんなにエラーが出ても続けることができたのだと感じる。'
       },
       {
         color: 'green lighten-1',
-        icon: 'mdi-airballoon',
-        title: '',
-        text: '',
+        title: '2019年 1月',
+        text: 'この頃からconpassというWebサービスを使って、もくもく会に参加するようになる。（最近は時間とお金がばかにならないのであまり参加してない。）またGithubへのコミットで一日の成果を残そうとするようになり、Githubにあるいろんな方のコードを見るようになる。',
       },
       {
         color: 'indigo',
-        icon: 'mdi-buffer',
-        title: '',
-        text: '',
+        title: '2019年 3月',
+        text: '形に残そうという意識が強くなり、デプロイまでなんとかできるようになってきた。言語一つとっても深く知れば知るほど、まだまだ知らないことばかりだと感じる。',
       }
     ]
   })

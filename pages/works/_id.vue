@@ -7,7 +7,7 @@
     <v-card class="ma-4">
       <v-img :src="work.img" aspect-ratio="2.15" />
 
-      <v-card-text>
+      <v-card-text class="my-3">
         {{ work.body }}
       </v-card-text>
 

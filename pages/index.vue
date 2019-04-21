@@ -13,14 +13,20 @@
 
               <v-card-title primary-title>
                 <div>
-                  <h3 class="headline">
+                  <h3 class="headline grey--text">
                     {{ work.title }}
                   </h3>
                 </div>
               </v-card-title>
 
               <div class="text-xs-center">
-                <v-chip label v-for="tag in work.tags" :key="tag.id" disabled color="primary lighten-2 white--text">
+                <v-chip
+                  v-for="tag in work.tags"
+                  :key="tag.id"
+                  label
+                  disabled
+                  color="primary lighten-2 white--text"
+                >
                   {{ tag }}
                 </v-chip>
               </div>
