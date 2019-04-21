@@ -6,7 +6,7 @@ export default [
     'img': require('assets/images/realtimechat.gif'),
     'url': 'https://laravuechat.herokuapp.com/',
     'github': 'https://github.com/roffet/realchat',
-    'tags': ['Laravel', 'Vue.js', 'Pusher', 'Socialite', 'Heroku'],
+    'tags': ['Laravel', 'Vue.js', 'Pusher', 'Socialite'],
   },
   {
     'title': 'blog',

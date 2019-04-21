@@ -19,9 +19,11 @@
                 </div>
               </v-card-title>
 
-              <v-chip v-for="tag in work.tags" :key="tag.id" disabled color="primary lighten-2 white--text">
-                {{ tag }}
-              </v-chip>
+              <div class="text-xs-center">
+                <v-chip label v-for="tag in work.tags" :key="tag.id" disabled color="primary lighten-2 white--text">
+                  {{ tag }}
+                </v-chip>
+              </div>
 
               <v-card-actions>
                 <v-spacer />
