@@ -34,19 +34,27 @@ export default {
     items: [
       {
         color: 'red lighten-2',
-        icon: 'mdi-star'
+        icon: 'mdi-star',
+        title: '',
+        text: '',
       },
       {
         color: 'purple darken-1',
-        icon: 'mdi-book-variant'
+        icon: 'mdi-book-variant',
+        title: '',
+        text: '',
       },
       {
         color: 'green lighten-1',
-        icon: 'mdi-airballoon'
+        icon: 'mdi-airballoon',
+        title: '',
+        text: '',
       },
       {
         color: 'indigo',
-        icon: 'mdi-buffer'
+        icon: 'mdi-buffer',
+        title: '',
+        text: '',
       }
     ]
   })

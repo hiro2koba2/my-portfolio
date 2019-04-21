@@ -21,7 +21,7 @@ export default [
     'body': 'このポートフォリオです。Nuxt.jsを土台にして、VuetifyというUIフレームワークで作りました。デプロイは、TravisCIを使ってGithubPagesに、git push以降自動で行なっています。',
     'img': require('assets/images/portfolio.png'),
     'github': 'https://github.com/roffet/my-portfolio',
-    'tags': ['Nuxt.js', 'Vuetify', 'TravisCI', 'Github Pages'],
+    'tags': ['Nuxt.js', 'Vuetify', 'TravisCI'],
   },
   {
     'title': 'line bot',

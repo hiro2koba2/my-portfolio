@@ -19,6 +19,10 @@
                 </div>
               </v-card-title>
 
+              <v-chip v-for="tag in work.tags" :key="tag.id" disabled color="primary lighten-2 white--text">
+                {{ tag }}
+              </v-chip>
+
               <v-card-actions>
                 <v-spacer />
                 <v-btn flat color="orange" router :to="{ name: 'works-id', params: { id: key }}">

@@ -5,28 +5,18 @@
     </h1>
 
     <v-card class="ma-4">
-      <v-img :src="work.img" aspect-ratio="2" />
-      <!-- <v-card-title primary-title>
-        <div>
-          <h3 class="headline">
-            {{ work.title }}
-          </h3>
-        </div>
-      </v-card-title> -->
-
-      <v-chip v-for="tag in work.tags" :key="tag.id" disabled color="blue white--text ma-2">
-        {{ tag }}
-      </v-chip>
+      <v-img :src="work.img" aspect-ratio="2.15" />
 
       <v-card-text>
         {{ work.body }}
       </v-card-text>
 
       <v-card-actions>
-        <v-btn flat color="orange" :href="work.url" target="_blank" rel="noopener noreferrer">
+        <v-spacer />
+        <v-btn flat color="orange" :href="work.url" target="_blank">
           URL
         </v-btn>
-        <v-btn flat color="orange" :href="work.github" target="_blank" rel="noopener noreferrer">
+        <v-btn flat color="orange" :href="work.github" target="_blank">
           Github
         </v-btn>
       </v-card-actions>
