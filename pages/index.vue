@@ -10,7 +10,6 @@
             <v-card slot-scope="{ hover }" class="ma-4" :class="`elevation-${hover ? 12 : 2}`">
               <v-img :src="work.img" height="200" />
               <hr>
-              <!-- TODO:画像の設定は後々変更 -->
 
               <v-card-title primary-title>
                 <div>
