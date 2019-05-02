@@ -5,7 +5,7 @@
         Works
       </h1>
       <v-layout row wrap>
-        <v-flex v-for="(work,key) in works" :key="key" xs12 sm12 md6>
+        <v-flex v-for="(work,key) in works" :key="key" xs12 sm6 md6>
           <v-hover>
             <v-card slot-scope="{ hover }" class="ma-4" :class="`elevation-${hover ? 12 : 2}`">
               <v-img :src="work.img" height="200" />

@@ -17,7 +17,8 @@ module.exports = {
     ]
   },
 
-  mode: 'universal',
+  // mode: 'universal',
+  // 謎のエラー発生によりコメントアウト nuxt server errorだったので
 
   /*
   ** Headers of the page
