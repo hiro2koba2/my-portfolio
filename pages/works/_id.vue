@@ -11,7 +11,7 @@
       </v-flex>
 
       <v-flex xs12 sm6 offset-sm3 mt-3>
-        <v-img :src="work.img" aspect-ratio="2.15" />
+        <v-img :src="work.img2" />
       </v-flex>
 
       <v-flex xs12 sm6 offset-sm3 class="text-xs-center" mt-5>
