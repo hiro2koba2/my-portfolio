@@ -14,6 +14,19 @@
         <v-img :src="work.img2" />
       </v-flex>
 
+      <v-flex xs12 class="text-xs-center grey--text" mt-5>
+        <h2>レスポンシブ対応</h2>
+      </v-flex>
+
+      <v-flex xs5 sm2 offset-sm3 mt-5>
+        <v-img :src="work.img3" />
+      </v-flex>
+
+      <!-- offsetはもっと簡略化した形でも書けるが、なぜか効かなくなったので戻した -->
+      <v-flex xs5 sm2 offset-xs2 offest-sm2 mt-5>
+        <v-img :src="work.img4" />
+      </v-flex>
+
       <v-flex xs12 sm6 offset-sm3 class="text-xs-center" mt-5>
         <v-btn outline color="orange" :href="work.url" target="_blank">
           URL
