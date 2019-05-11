@@ -13,13 +13,13 @@ export default [
   },
   {
     'title': 'hugo-blog',
-    'body': 'ブログです。headlessCMSというものを使ってみたくて、Contentfulを使って作りました。フロントの部分はbulma(buefy)を使ってみました。デプロイの部分はnetlifyに助けてもらってます。',
+    'body': 'ブログです。CMSなしで管理できるという点に惹かれて、静的ジェネレータのHugoを使って見ました。テーマはmainroadを使っています、色や配置はかなりカスタマイズしたものになってます。デプロイはnetlifyに行なっています。',
     'img': require('assets/images/hugo2.png'),
     'img2': require('assets/images/hugo.png'),
     'img3': require('assets/images/blog-res.png'),
     'img4': require('assets/images/blog-res2.png'),
-    'url': 'https://elegant-tesla-c43e26.netlify.com/',
-    'github': 'https://github.com/roffet/my-blog',
+    'url': 'https://roffet-blog.netlify.com/',
+    'github': 'https://github.com/roffet/hugoblog',
     'tags': ['Hugo', 'netlify'],
   },
   {
@@ -33,13 +33,13 @@ export default [
     'tags': ['Nuxt.js', 'Vuetify', 'TravisCI'],
   },
   {
-    'title': 'line bot',
+    'title': 'BBS',
     'body': '製作中です。',
     'img': require('assets/images/chat4.png'),
     'img2': require('assets/images/chat2.png'),
     'img3': require('assets/images/blog-res.png'),
     'img4': require('assets/images/blog-res2.png'),
-    'tags': ['Node.js'],
+    'tags': ['Laravel', 'AWS'],
   },
 ]
 </script>

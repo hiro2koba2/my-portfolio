@@ -3,7 +3,7 @@
     <nav>
       <v-toolbar flat app class="teal accent-4 white--text">
         <v-toolbar-title class="display-1 ma-3">
-          Portfolio
+          portfolio
         </v-toolbar-title>
 
         <v-spacer />
@@ -49,6 +49,7 @@ export default {
       links: [
         { icon: 'code', text: 'Works', route: '/' },
         { icon: 'person', text: 'About', route: '/about' },
+        { icon: 'palette', text: 'Skills', route: '/skill' },
         { icon: 'mail', text: 'Contact', route: '/contact' },
       ]
     }
