@@ -17,7 +17,7 @@ module.exports = {
     ]
   },
 
-  // mode: 'universal',
+  mode: 'spa',
   // 謎のエラー発生によりコメントアウト nuxt server errorだったので
 
   /*

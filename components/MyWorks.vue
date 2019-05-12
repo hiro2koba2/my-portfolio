@@ -24,7 +24,7 @@ export default [
   },
   {
     'title': 'portfolio',
-    'body': 'このポートフォリオです。Nuxt.jsを土台にして、VuetifyというUIフレームワークで作りました。デプロイは、GithubPagesにTravisCIを使って行なっています。',
+    'body': 'このポートフォリオです。Nuxt.jsを土台にして、VuetifyというUIフレームワークで作りました。Vuetifyの機能をふんだんに使ったものになってます。デプロイは、GithubPagesにTravisCIを使って行なっています。',
     'img': require('assets/images/port2.png'),
     'img2': [require('assets/images/hugo2.png'), require('assets/images/hugo2.png'), require('assets/images/hugo2.png')],
     'img3': require('assets/images/port-res.png'),
