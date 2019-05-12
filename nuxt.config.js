@@ -18,7 +18,6 @@ module.exports = {
   },
 
   mode: 'spa',
-  // 謎のエラー発生によりコメントアウト nuxt server errorだったので
 
   /*
   ** Headers of the page
