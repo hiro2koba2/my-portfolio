@@ -11,7 +11,11 @@
       </v-flex>
 
       <v-flex xs12 sm6 offset-sm3 mt-3>
-        <v-img :src="work.img2" />
+        <v-carousel height="auto">
+          <v-carousel-item v-for="(image, i) in work.img2" :key="i" :src="image">
+            <!-- <v-img :src="image" /> -->
+          </v-carousel-item>
+        </v-carousel>
       </v-flex>
 
       <v-flex xs12 class="text-xs-center grey--text" mt-5>
