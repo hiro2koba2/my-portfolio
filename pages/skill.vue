@@ -70,14 +70,15 @@ export default {
   data() {
     return {
       items: [
-        { title: 'PHP', color: 'green lighten-1', text: 'about' },
-        { title: 'Laravel', color: 'green lighten-2', text: '便利すぎる部分がある言語、認証の部分は勉強にならないくらいです。' },
-        { title: 'Javascript', color: 'green lighten-4', text: 'Contact' },
+        { title: 'PHP', color: 'green lighten-1', text: '' },
+        { title: 'Laravel', color: 'green lighten-2', text: '便利すぎる部分がある言語、認証の基本的な部分はコマンド一つで終わってしまう。もちろん通常の認証以外もつけるとは思いますが。' },
+        { title: 'Javascript', color: 'green lighten-4', text: 'このポートフォリオのコードの解析にはESLintを使ってます。' },
         { title: 'Vue.js', color: 'green lighten-5', text: 'About' },
         { title: 'Nuxt.js', color: 'green lighten-1', text: 'vue-routerとかが置くだけで利用できるのはやはり便利だと感じます。' },
+        { title: 'MySQL', color: 'green lighten-2', text: 'SQL言語だと、一番触れたものはこれです。ログインしてSQL直書きでDBやテーブルの中身見たりしてました。今はテーブルプラスっていうアプリケーションで確認することの方が多いです。'},
       ],
       tools: [
-        { title: 'Vagrant', color: 'lime lighten-2', text: 'VirtualBoxとの組み合わせで、Laravelの公式開発環境のhomesteadをよく使ってます。' },
+        { title: 'VirtualBox', color: 'lime lighten-2', text: 'Laravelの公式開発環境のhomesteadをよく使ってます。' },
         { title: 'AWS', color: 'lime lighten-3', text: '使い始めました、今一番勉強してるところでもあります。この分野を知ることで、今までわからなかったことが繋がってきた感覚があります。EC2、S3、Cloudfront、Route53、IAM、Codedeploy、etc' },
         { title: 'Docker', color: 'lime lighten-1', text: '軽く触った程度です。Dockerfileなども見よう見まねで、書きましたが利点をあまり実感で来てない状態です。' },
         { title: 'Heroku', color: 'lime lighten-4', text: 'デプロイの環境として一番使わせてもらいました。' },
@@ -85,6 +86,7 @@ export default {
       editors: [
         { title: 'VScode', color: 'cyan lighten-1', text: 'エディタはほぼずっとこれです。プラグインとかも簡単に入れられて、一番慣れているエディタです。' },
         { title: 'figma', color: 'cyan lighten-2', text: '無料で画像編集できるので使ってます。もちろん無料なので制限はありますが、ワイヤーフレームのようなこともできるので本当に便利です。' },
+        { title: 'draw.io', color: 'cyan lighten-3', text: 'ER図やAWSの構成図を書くのに使ってます。専用の部品が用意されてるのでかなり良いです。'},
       ]
     }
   }

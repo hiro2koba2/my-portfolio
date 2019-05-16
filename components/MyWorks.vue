@@ -34,7 +34,7 @@ export default [
   },
   {
     'title': 'BBS',
-    'body': '製作中です。',
+    'body': '今のところLaravelだけを使ったカフェの情報を載せるための掲示板です。デプロイはAWSのEC2に行なっています。DBはEC2の中に入れてある形です。ドメインをRoute53でつけて、常時SSL対応までしてあります。',
     'img': require('assets/images/chat4.png'),
     'img2': [require('assets/images/hugo2.png'), require('assets/images/hugo2.png'), require('assets/images/hugo2.png')],
     'img3': require('assets/images/blog-res.png'),
