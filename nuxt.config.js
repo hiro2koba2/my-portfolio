@@ -10,10 +10,10 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 module.exports = {
   generate: {
     routes: [
-      '/works/0',
       '/works/1',
       '/works/2',
       '/works/3',
+      '/works/4',
     ]
   },
 

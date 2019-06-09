@@ -1,6 +1,15 @@
 <script>
 export default [
   {
+    'title': 'cafe-bbs',
+    'body': '今のところLaravelだけを使ったカフェの情報を載せるための掲示板です。デプロイはAWSのEC2に行なっています。DBはEC2の中に入れてある形です。ドメインをRoute53でつけて、常時SSL対応までしてあります。',
+    'img': require('assets/images/cafebbs.png'),
+    'img2': [require('assets/images/cafebbs1.png'), require('assets/images/cafebbs2.png'), require('assets/images/cafebbs3.png')],
+    'img3': require('assets/images/cafebbs-res1.png'),
+    'img4': require('assets/images/cafebbs-res2.png'),
+    'tags': ['Laravel', 'AWS'],
+  },
+  {
     'title': 'RealTimeChat',
     'body': 'Websocketを使ったリアルタイム表示を作ってみたかったので、チャットを作りました。それとソーシャルログインもgithubのみ対応しています。デプロイはHerokuに行なっています。',
     'img': require('assets/images/chat4.png'),
@@ -31,15 +40,6 @@ export default [
     'img4': require('assets/images/port-res2.png'),
     'github': 'https://github.com/roffet/my-portfolio',
     'tags': ['Nuxt.js', 'Vuetify', 'TravisCI'],
-  },
-  {
-    'title': 'BBS',
-    'body': '今のところLaravelだけを使ったカフェの情報を載せるための掲示板です。デプロイはAWSのEC2に行なっています。DBはEC2の中に入れてある形です。ドメインをRoute53でつけて、常時SSL対応までしてあります。',
-    'img': require('assets/images/chat4.png'),
-    'img2': [require('assets/images/hugo2.png'), require('assets/images/hugo2.png'), require('assets/images/hugo2.png')],
-    'img3': require('assets/images/blog-res.png'),
-    'img4': require('assets/images/blog-res2.png'),
-    'tags': ['Laravel', 'AWS'],
   },
 ]
 </script>
