@@ -3,7 +3,7 @@
     <nav>
       <v-toolbar flat app class="teal accent-4 white--text">
         <v-toolbar-title class="display-1 ma-3">
-          portfolio
+          roffet's portfolio
         </v-toolbar-title>
 
         <v-spacer />
