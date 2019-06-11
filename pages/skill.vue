@@ -71,17 +71,17 @@ export default {
     return {
       items: [
         { title: 'PHP', color: 'green lighten-1', text: '僕の中の基準となる言語。PHPと比べるとこの言語はこうだなとよく考えます。' },
-        { title: 'Laravel', color: 'green lighten-2', text: '便利すぎる部分がある言語。認証の基本的な部分はコマンド一つで終わってしまう。もちろん通常の認証以外もつけるとは思いますが。' },
+        { title: 'Laravel', color: 'green lighten-2', text: '便利すぎる部分がある言語。認証の基本的な部分はコマンド一つで終わってしまう。最近一番使ってます。' },
         { title: 'Javascript', color: 'green lighten-4', text: 'なくてはならない言語。このポートフォリオのJSコードの解析にはESLintを使ってます。' },
         { title: 'Vue.js', color: 'green lighten-5', text: 'JavaScriptのフレームワークでは一番触ったことのある言語' },
         { title: 'Nuxt.js', color: 'green lighten-1', text: 'vue-routerとかが置くだけで利用できるのはやはり便利だと感じます。' },
-        { title: 'MySQL', color: 'green lighten-2', text: 'SQL言語だと、一番触れたものはこれです。ログインしてSQL直書きでDBやテーブルの中身見たりしてました。今はテーブルプラスっていうアプリケーションで確認することの方が多いです。' },
+        { title: 'MySQL', color: 'green lighten-2', text: 'SQL言語だと、一番触れたものはこれです。SQL自体はフレームワークのORM使いだしてから、あまり意識できてないです。' },
       ],
       tools: [
-        { title: 'VirtualBox', color: 'lime lighten-2', text: 'Laravelの公式開発環境のhomesteadをよく使ってます。' },
-        { title: 'AWS', color: 'lime lighten-3', text: '使い始めました。EC2、S3、Route53、IAM' },
-        { title: 'Docker', color: 'lime lighten-1', text: '軽く触った程度です。Dockerfileなども見よう見まねで、書きましたが利点をあまり実感で来てない状態です。' },
-        { title: 'Heroku', color: 'lime lighten-4', text: 'デプロイの環境として一番使わせてもらいました。' },
+        { title: 'VirtualBox', color: 'lime lighten-2', text: 'Laravelの公式開発環境のhomesteadをよく使ってます。vagrantとの組み合わせで使ってます。' },
+        { title: 'AWS', color: 'lime lighten-3', text: '無料枠から使い始めました。EC2、S3、Route53、IAM' },
+        { title: 'Docker', color: 'lime lighten-1', text: '軽く触った程度です。Dockerfileなどを見よう見まねで、書きましたが利点をあまり実感で来てない状態です。' },
+        { title: 'Heroku', color: 'lime lighten-4', text: 'デプロイの環境としてよく使ってました。' },
       ],
       editors: [
         { title: 'VScode', color: 'cyan lighten-1', text: 'エディタはほぼずっとこれです。プラグインとかも簡単に入れられて、一番慣れているエディタです。' },
