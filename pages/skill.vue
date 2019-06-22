@@ -72,7 +72,7 @@ export default {
       items: [
         { title: 'PHP', color: 'green lighten-1', text: '僕の中の基準となる言語。PHPと比べるとこの言語はこうだなとよく考えます。' },
         { title: 'Laravel', color: 'green lighten-2', text: '便利すぎる部分がある言語。認証の基本的な部分はコマンド一つで終わってしまう。最近一番使ってます。' },
-        { title: 'Javascript', color: 'green lighten-4', text: 'なくてはならない言語。このポートフォリオのJSコードの解析にはESLintを使ってます。' },
+        { title: 'JavaScript', color: 'green lighten-4', text: 'なくてはならない言語。このポートフォリオのJSコードの解析にはESLintを使ってます。' },
         { title: 'Vue.js', color: 'green lighten-5', text: 'JavaScriptのフレームワークでは一番触ったことのある言語' },
         { title: 'Nuxt.js', color: 'green lighten-1', text: 'vue-routerとかが置くだけで利用できるのはやはり便利だと感じます。' },
         { title: 'MySQL', color: 'green lighten-2', text: 'SQL言語だと、一番触れたものはこれです。SQL自体はフレームワークのORM使いだしてから、あまり意識できてないです。' },
